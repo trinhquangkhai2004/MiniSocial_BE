@@ -12,6 +12,7 @@ _core/__pycache__/
 
 #--AI's recommend--
 # Python
+__pycache__/
 *.py[cod]
 *.pyo
 *.pyd
