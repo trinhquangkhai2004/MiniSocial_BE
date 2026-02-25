@@ -16,13 +16,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-<<<<<<< HEAD
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('login/', include('login.urls')),
-    path('signup/', include('signup.urls')),
-=======
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -32,7 +25,6 @@ urlpatterns = [
     path('signup/', include('apps.signup.urls')),
     path('users/', include('apps.users.urls')),
   #  path('posts/', include('apps.posts.urls')),
->>>>>>> 6072246 (Create apps.users and update features to login and signup)
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
